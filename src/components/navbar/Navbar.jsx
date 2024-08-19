@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import styled, { useTheme } from 'styled-components'
-import { Bio } from "../data/constants"
+import { Bio } from "../../data/constants"
 import MenuIcon from '@mui/icons-material/Menu';
 
 
@@ -37,6 +37,7 @@ const NavLogo = styled.div`
     text-decoration: none;
     color: inherit;
     font-weight: 500;
+    cursor: pointer;
     `
 
 const NavItems = styled.ul`
@@ -112,7 +113,7 @@ const MobileIcon = styled.div`
 
 const MobileMenu = styled.ul`
    width: 100%;
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     gap: 16px;
@@ -125,7 +126,7 @@ const MobileMenu = styled.ul`
     top: 80px;
     right: 0;
 
-
+    backdrop-filter: blur(7px);
     transition: all 0.6s ease-in-out;
     transform: ${({isOpen})=> 
       isOpen ? "translateY(0)" : "translateY(-100%)"  
@@ -134,6 +135,11 @@ const MobileMenu = styled.ul`
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     opacity: ${({isOpen})=> ( isOpen ? "100%" : "0" )};
     z-index: ${({isOpen})=> ( isOpen ? "1000" : "-1000" )};
+
+
+     @media screen and (max-width: 768px) {
+    display: flex;
+  }
 
   `
 
