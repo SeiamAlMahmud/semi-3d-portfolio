@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { skills } from '../../../data/constants'
 import { Tilt } from 'react-tilt'
-
+import StarCanvas from "../../canvas/Stars"
 
 const Container = styled.div`
   display: flex;
@@ -122,6 +122,7 @@ const SkillImg = styled.img`
 const Skills = () => {
     return (
         <Container id="Skills">
+            <StarCanvas />
             <Wrapper>
                 <Title>Skills</Title>
                 <Desc>
@@ -132,11 +133,11 @@ const Skills = () => {
                         skills.map((skill, idx) => {
                             return (
                                 <Tilt>
-                                    <Skill key={`skill-${idx}`}>
+                                    <Skill key={idx}>
                                         <SkillTitle>{skill.title}</SkillTitle>
-                                        <SkillList>{skill.skills.map((item, index) => {
+                                        <SkillList>{skill?.skills?.map((item, index) => {
                                             return (
-                                                <SkillItem key={`skill-${index}`}>
+                                                <SkillItem key={index}>
                                                     <SkillImg src={item.image} />
                                                     {item.name}
                                                 </SkillItem>

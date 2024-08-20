@@ -245,7 +245,7 @@ const HeroSection = () => {
               <motion.div {...headContentAnimation}>
                 <Subtitle> {Bio.description}</Subtitle>
               </motion.div>
-              <ResumeButton>Check Button</ResumeButton>
+              <ResumeButton>Check My Resume</ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
             <motion.div {...headContentAnimation}>
