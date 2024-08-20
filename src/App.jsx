@@ -4,6 +4,7 @@ import { darkTheme } from './utils/Themes'
 import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/sections/Hero/HeroSection';
 import Skills from './components/sections/skills/Skills';
+import Experience from './components/Experience/Experience';
 
 
 
@@ -26,10 +27,13 @@ function App() {
 
     <ThemeProvider theme={darkTheme}>
     <Navbar />
+
     <Body>
     <HeroSection />
     <Skills />
+    <Experience />
     </Body>
+
     </ThemeProvider>
     </>
   )
