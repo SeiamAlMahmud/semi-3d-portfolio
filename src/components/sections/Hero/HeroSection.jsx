@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Bio } from "../../data/constants"
+import { Bio } from "../../../data/constants"
 import TypeWriter from "typewriter-effect"
-import HeroImg from "../../assets/bg-001.jpg"
+import HeroImg from "../../../assets/bg-001.jpg"
 import { Tilt } from "react-tilt"
 import { motion } from 'framer-motion'
-import { headContainerAnimation, headTextAnimation, headContentAnimation } from "../../utils/motion"
-import StarCanvas from "../canvas/Stars"
+import { headContainerAnimation, headTextAnimation, headContentAnimation } from "../../../utils/motion"
+import StarCanvas from "../../canvas/Stars"
 
 
 

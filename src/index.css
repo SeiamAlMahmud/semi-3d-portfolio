@@ -89,14 +89,11 @@ body {
 
 .xyz {
 
-
-  -webkit-transform: translateX(-50%), translateY(-50%);
-  transform: translateX(-50%), translateY(-50%);
+  border-radius: 16px;
 
   @media screen and (max-width: 960px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
+    flex-direction: column;
+
   }
 
 }

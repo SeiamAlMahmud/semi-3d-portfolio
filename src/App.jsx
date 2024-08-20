@@ -2,7 +2,8 @@ import { useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme } from './utils/Themes'
 import Navbar from './components/navbar/Navbar';
-import HeroSection from './components/sections/HeroSection';
+import HeroSection from './components/sections/Hero/HeroSection';
+import Skills from './components/sections/skills/Skills';
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <Navbar />
     <Body>
     <HeroSection />
+    <Skills />
     </Body>
     </ThemeProvider>
     </>
