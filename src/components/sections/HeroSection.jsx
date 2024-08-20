@@ -6,6 +6,7 @@ import HeroImg from "../../assets/bg-001.jpg"
 import { Tilt } from "react-tilt"
 import { motion } from 'framer-motion'
 import { headContainerAnimation, headTextAnimation, headContentAnimation } from "../../utils/motion"
+import StarCanvas from "../canvas/Stars"
 
 
 
@@ -216,10 +217,11 @@ const HeroBg = styled.div`
 const HeroSection = () => {
   return (
     <div id='About'>
+        <StarCanvas />
       <HeroContainer>
-        {/* <HeroBg>
-        <HeroBgAnimation />
-      </HeroBg> */}
+        <HeroBg>
+        {/* <HeroBgAnimation /> */}
+      </HeroBg>
         <motion.div {...headContainerAnimation}>
 
           <HeroInnerContainer>
@@ -256,6 +258,7 @@ const HeroSection = () => {
           </HeroInnerContainer>
         </motion.div>
       </HeroContainer>
+    
     </div>
   )
 }

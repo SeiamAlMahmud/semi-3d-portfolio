@@ -17,6 +17,7 @@ height: 90vh;
 
 
 function App() {
+  document.title = "Homepage";
   const [count, setCount] = useState(0)
 
   return (
