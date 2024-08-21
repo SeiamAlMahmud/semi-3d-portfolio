@@ -6,6 +6,7 @@ import HeroSection from './components/sections/Hero/HeroSection';
 import Skills from './components/sections/skills/Skills';
 import Experience from './components/sections/Experience/Experience';
 import Education from './components/sections/EduCard/Education';
+import Projects from './components/sections/Projects/Projects';
 
 
 
@@ -47,11 +48,14 @@ function App() {
         <Navbar />
         <Body>
           <div>
-              <HeroSection />
-              <Skills />
+            <HeroSection />
             <Wrapper>
-            <Experience />
-            <Education />
+              <Skills />
+              <Experience />
+            </Wrapper>
+            <Projects />
+            <Wrapper>
+              <Education />
             </Wrapper>
           </div>
         </Body>
