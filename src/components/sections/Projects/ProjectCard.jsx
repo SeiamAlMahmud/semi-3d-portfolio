@@ -12,7 +12,7 @@ const Card = styled.div`
     box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     padding: 26px 20px;
-    display: flex;
+    display: ${(props) => (props.isVisible ? 'flex' : 'none')};
     flex-direction: column;
     gap: 14px;
     transition: all 0.2s ease-in-out;
@@ -129,9 +129,9 @@ const Button = styled.div`
 
 
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, isVisible }) => {
     return (
-        <Card>
+        <Card isVisible={isVisible}>
             <Image src={project?.image} />
             <Tags></Tags>
             <Details>

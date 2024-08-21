@@ -74,7 +74,12 @@ const ToggleButton = styled.div`
     padding: 8px 18px;
     cursor: pointer;
     transition: all ease;
-    
+    ${({ active, theme }) => active &&
+        `
+        background: linear-gradient(to top, #844ce63d, transparent);
+        `
+    }
+    color: ${({ active, theme }) => active && theme.text_primary};
     &:hover {
         background: linear-gradient(to top, ${({ theme }) => theme.primary + 60}, transparent);
         color: ${({ theme }) => theme.text_primary}
@@ -92,10 +97,7 @@ const ToggleButton = styled.div`
      @media screen and (max-width: 435px) {
     border-bottom: 1px solid ${({ theme }) => theme.primary};
     justify-content: center;
-    &:hover {
-        background: linear-gradient(to top, ${({ theme }) => theme.primary + 60}, transparent);
-        color: ${({ theme }) => theme.text_primary}
-    }
+   
     }
 
 `
@@ -118,6 +120,8 @@ const Projects = () => {
 
 
     const [toggle, setToggle] = useState("all")
+
+
     return (
         <Container id="Projects">
             <StarCanvas />
@@ -133,24 +137,19 @@ const Projects = () => {
                 </ToggleButtonGroup>
                 <ToggleCardcontainer>
                     {
-                        toggle == "all" && projects.map((project, index) => {
+                        projects.map((project, index) => {
+
                             return (
-                              <ProjectCard 
-                              key={index} 
-                              project={project}
-                               />
+                                <ProjectCard
+                                    key={index}
+                                    project={project}
+                                    isVisible={
+                                        toggle === 'all' || project.category === toggle
+                                    }
+                                />
                             )
-                          })
-                    }
-                    {
-                        projects.filter((item,_)=> toggle === item.category).map((project, index) => {
-                            return (
-                              <ProjectCard 
-                              key={index} 
-                              project={project}
-                               />
-                            )
-                          })
+
+                        })
                     }
                 </ToggleCardcontainer>
             </Wrapper>

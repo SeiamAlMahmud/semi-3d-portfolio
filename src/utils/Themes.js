@@ -2,6 +2,7 @@ export const darkTheme = {
   bg: "#090917",
   bgLight: "#1C1E27",
   primary: "#854CE6",
+  background: "linear-gradient(to top, #854CE6, transparent)",
   text_primary: "#F2F3F4",
   text_secondary: "#b1b2b3",
   card: "#171721",
