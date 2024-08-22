@@ -124,7 +124,7 @@ const Projects = () => {
 
     return (
         <Container id="Projects">
-            <StarCanvas />
+            {/* <StarCanvas />  */}
             <Wrapper>
                 <Title>Projects</Title>
                 <Desc>I have worked on a wide range of Projects. From Web Applicaton to App Application. Here are some of Projects.</Desc>

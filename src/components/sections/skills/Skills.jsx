@@ -122,7 +122,7 @@ const SkillImg = styled.img`
 const Skills = () => {
     return (
         <Container id="Skills">
-            <StarCanvas />
+            {/* <StarCanvas /> */}
             <Wrapper>
                 <Title>Skills</Title>
                 <Desc>

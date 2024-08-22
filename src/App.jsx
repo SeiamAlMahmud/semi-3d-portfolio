@@ -4,9 +4,12 @@ import { darkTheme } from './utils/Themes'
 import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/sections/Hero/HeroSection';
 import Skills from './components/sections/skills/Skills';
-import Experience from './components/sections/Experience/Experience';
+import Experience from './components/sections/Experience/ExperienceCard/Experience';
 import Education from './components/sections/EduCard/Education';
 import Projects from './components/sections/Projects/Projects';
+import EarthCanvas from './components/canvas/Earth';
+import Contact from './components/sections/Contact/Contact';
+import Footer from './components/sections/Footer/Footer';
 
 
 
@@ -57,6 +60,9 @@ function App() {
             <Wrapper>
               <Education />
             </Wrapper>
+            {/* <EarthCanvas /> */}
+            <Contact />
+            <Footer />
           </div>
         </Body>
 

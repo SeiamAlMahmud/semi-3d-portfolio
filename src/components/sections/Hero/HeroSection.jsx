@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Bio } from "../../../data/constants"
 import TypeWriter from "typewriter-effect"
-import HeroImg from "../../../assets/bg-001.jpg"
 import { Tilt } from "react-tilt"
 import { motion } from 'framer-motion'
 import { headContainerAnimation, headTextAnimation, headContentAnimation } from "../../../utils/motion"
@@ -251,7 +250,7 @@ const HeroSection = () => {
             <motion.div {...headContentAnimation}>
 
               <Tilt>
-                <Img src={HeroImg} alt="Rishaw Chanda" />
+                <Img src={'https://avatars.githubusercontent.com/u/142799529?v=4'} alt="Rishaw Chanda" />
               </Tilt>
             </motion.div>
             </HeroRightContainer>
