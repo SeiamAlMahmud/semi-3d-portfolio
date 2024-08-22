@@ -216,7 +216,7 @@ const HeroBg = styled.div`
 const HeroSection = () => {
   return (
     <div id='About'>
-        <StarCanvas />
+        {/* <StarCanvas /> */}
       <HeroContainer>
         <HeroBg>
         {/* <HeroBgAnimation /> */}
@@ -228,7 +228,7 @@ const HeroSection = () => {
               <motion.div {...headTextAnimation}>
                 <Title>Hi, I am <br /> {Bio.name} </Title>
                 <TextLoop>
-                  <p>I am a <br /></p>
+                  <p>I am <br /></p>
                   <span style={{ color: "#854CE6" }}>
                     <TypeWriter
                       options={{

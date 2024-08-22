@@ -4,7 +4,7 @@ import { darkTheme } from './utils/Themes'
 import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/sections/Hero/HeroSection';
 import Skills from './components/sections/skills/Skills';
-import Experience from './components/sections/Experience/ExperienceCard/Experience';
+import Experience from './components/sections/Experience/Experience'
 import Education from './components/sections/EduCard/Education';
 import Projects from './components/sections/Projects/Projects';
 import EarthCanvas from './components/canvas/Earth';
